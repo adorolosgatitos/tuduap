@@ -2,7 +2,7 @@
 
 Una lista de tareas con estética gatil, hecha con Streamlit. Se agregan, se
 completan, se borran y se filtran. **No guarda nada**: las tareas viven en
-`st.session_state` y se van cuando cerrás la sesión.
+`st.session_state` y se van cuando cierras la sesión.
 
 ## Correrla
 
@@ -38,8 +38,3 @@ La separación entre `app.py` y `todo_app/` no es una convención: `TaskStore`
 recibe el estado por parámetro. En la app es `TaskStore(st.session_state)` y en
 los tests es `TaskStore({})`, así que la suite corre sin instalar ni levantar
 Streamlit. `test_separation.py` lo verifica sobre el AST, no sobre el texto.
-
-## Alcance
-
-Agregar, completar (toggle), eliminar y filtrar. Sin login, sin IA, sin base de
-datos y sin persistencia: recargar la sesión deja la lista vacía, a propósito.
