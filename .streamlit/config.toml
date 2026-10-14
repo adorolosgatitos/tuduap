@@ -1,0 +1,12 @@
+# Tema de la app: fondo blanco, letras café.
+#
+# secondaryBackgroundColor no es blanco puro a propósito: los inputs, botones y
+# tarjetas se dibujan sobre ese color, y con blanco en los dos lados las
+# separaciones desaparecen y la app se ve rota.
+
+[theme]
+base = "light"
+primaryColor = "#8D6E63"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#FAF7F3"
+textColor = "#5D4037"

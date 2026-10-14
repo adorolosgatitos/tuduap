@@ -2,4 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.streamlit/
+
+# Solo los secretos son de cada máquina. config.toml lleva el tema y va
+# versionado: es diseño de la app, no configuración personal.
+.streamlit/secrets.toml

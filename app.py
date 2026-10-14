@@ -18,12 +18,12 @@ CATO_LISTO = "😺"
 
 FILTER_LABELS = {
     TaskFilter.ALL: "🐾 Todas",
-    TaskFilter.PENDING: "🐱 Pendientes",
+    TaskFilter.PENDING: "😿 Pendientes",
     TaskFilter.COMPLETED: "😺 Completadas",
 }
 
 EMPTY_STATES = {
-    TaskFilter.ALL: "🐾 Todavía no hay tareas. ¡Escribí la primera arriba!",
+    TaskFilter.ALL: "🐾 Todavía no hay tareas. ¡Escribe la primera arriba!",
     TaskFilter.PENDING: "🐱 Ninguna pendiente. Michi puede dormir tranquilo 😴",
     TaskFilter.COMPLETED: "😺 Todavía no completaste ninguna tarea.",
 }
@@ -43,7 +43,7 @@ def fila_de(tarea: Task) -> str:
 store = TaskStore(st.session_state)
 
 st.title("🐱 Mis tareas")
-st.caption("Se guardan solo en esta sesión. Cuando cierrás, se van con el gato.")
+st.caption("Se guardan solo en esta sesión. Cuando cierras, se van con el gato.")
 
 # --- Agregar ---
 # clear_on_submit limpia el campo al enviar. Lo único que el formulario rechaza
